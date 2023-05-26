@@ -1,9 +1,9 @@
 docker commands: 
+=====================
  mkdir sample
   cd sample
   vim app.py
-  pwd
-  vim Dockerfile
+ 
 
   docker build -t myimage:latest .
    docker run --name sample -p 8080:4000 myimage
@@ -17,7 +17,7 @@ docker commands:
    
    
    Instance commands:
-   
+   ======================
     1  yum update -y
     2  yum upgrade -y
     3  yum install httpd -y
@@ -30,6 +30,7 @@ docker commands:
     
     
     Git commands:
+    ===============
     
     git config --global user.name "chaitali495"
     git config --global user.email "chaitalichavan.s95@gmail.com"
@@ -48,6 +49,7 @@ docker commands:
 
 
 stackify flask
+================
 from flask import Flask
 import os
 import socket
@@ -61,7 +63,7 @@ def hello():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=4000)
-    
+   ============= ===================================================================================
     
     
     2nd docker file
