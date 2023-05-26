@@ -1,0 +1,64 @@
+## Doker_img_built_command:
+create folder and into this put java file and Dokerfile
+	cd flodername
+  sudo docker build -t "trupti:1.0" .
+  sudo docker build -t trupti:1.0 .
+  sudo docker build -t trupti:1.0 .
+  sudo docker image list
+  sudo docker run -it trupti:1.0
+  sudo docker build -t trupti:1.0 .
+  sudo docker image list
+  sudo docker run -it trupti:1.0
+==================================================================
+##  Git commands:
+ *git config --global user.name "username"
+ *git config --global user.email gitemailid
+ *git init
+git clone (copy repository path)
+  cd (repository name)
+  touch file{1..3}.txt
+  ls
+  git add -A
+  git commit -m "Hello"
+  git push -u origin main
+  username: github username
+  password: generate token
+===================================================================
+## EC2 Instance command:
+
+(If Remotely connect :
+                      (download/)chmod 400 key.pem(keyname)
+                                 ssh -i key.pem ec2-user@(copy public id)
+                                 
+                      )
+sudo su
+    1  yum update -y
+    2  yum upgrade -y
+    3  yum install -y httpd
+    4  cat /var/www/html
+    5  vim index.html
+    6  cat index.html
+    7  systemctl start httpd
+    8  systemctl enable httpd
+(copy public id)
+html code:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html> 
+
+===================================================================
+docker command
+docker run – This command is used to start a new Docker container from an image.
+docker ps – This command is used to list all the running Docker containers.
+docker stop – This command is used to stop a running container.
+docker rm – This command is used to remove a Docker container.
+docker images – This command is used to list all the Docker images that are currently available on your system.
+docker pull – This command is used to download a Docker image from a registry.
+docker exec – This command is used to execute a command in a running container.
+docker-compose – This command is used to manage multi-container Docker applications.
