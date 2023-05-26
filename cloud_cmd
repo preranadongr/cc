@@ -1,0 +1,73 @@
+docker commands: 
+ mkdir sample
+  cd sample
+  vim app.py
+  pwd
+  vim Dockerfile
+
+  docker build -t myimage:latest .
+   docker run --name sample -p 8080:4000 myimage
+  docker stop myimage
+  docker ps --all
+  docker rmi -f myimage
+  docker images
+   docker rmi -f (image id)
+  docker images
+   history
+   
+   
+   Instance commands:
+   
+    1  yum update -y
+    2  yum upgrade -y
+    3  yum install httpd -y
+    4  cd /var/www/html
+    5  vim index.html
+    6  cat index.html
+    7  systemctl start httpd 
+    8  systemctl enable httpd 
+    9  history
+    
+    
+    Git commands:
+    
+    git config --global user.name "chaitali495"
+    git config --global user.email "chaitalichavan.s95@gmail.com"
+    mkdir gitsample
+    cd gitsample
+    git init
+   touch files.txt
+   git status
+   git add -A
+   git commit -m "commit"
+   git status
+   git remote add origin https://github.com/chaitali495/repocmd.git
+   git branch -M main
+   git push -u origin main
+   history
+
+
+stackify flask
+from flask import Flask
+import os
+import socket
+
+app = Flask(__name__)
+@app.route("/")
+
+def hello():
+    html = "<h3>Hello {name}!</h3> <b>Hostname:</b> {hostname}<br/>"
+    return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=4000)
+    
+    
+    
+    2nd docker file
+    FROM python:2.7-slim
+    WORKDIR /app
+    ADD . /app
+    RUN pip install --trusted-host pypi.python.org Flask
+    ENV NAME World
+    CMD ["python", "app.py"]
